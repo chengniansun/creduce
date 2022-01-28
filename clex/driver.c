@@ -481,6 +481,7 @@ int main(int argc, char *argv[]) {
     assert(res == 1);
     assert(n_toks > 0 && n_toks <= 1000);
   } else if (strncmp(cmd, "rm-tok-pattern-", 15) == 0) {
+    // cnsun: remove token patterns of 4. the `n_toks` is the size of a token pattern, and is always 4 in c-reduce.	  
     mode = MODE_RM_TOK_PATTERN;
     int res = sscanf(&cmd[15], "%d", &n_toks);
     assert(res == 1);
