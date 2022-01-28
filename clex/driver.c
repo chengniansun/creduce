@@ -328,6 +328,8 @@ static void print_pattern(unsigned char c) {
 }
 
 static void rm_tok_pattern(int idx) {
+  // cnsun: idx is the start index to apply this transformation.
+  // n_tok: the size of the token pattern	
   int i;
   int n_patterns = 1 << (n_toks - 1);
 
