@@ -494,6 +494,7 @@ int main(int argc, char *argv[]) {
   }
 
   int tok_index;
+  // cnsun: the start token to apply the transformation, from the head of the token list.	
   int ret = sscanf(argv[2], "%d", &tok_index);
   assert(ret == 1);
   // printf ("file = '%s'\n", argv[3]);
